@@ -1,0 +1,19 @@
+<mvc:View
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:forms="sap.ui.layout.form"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m">
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" layout="ColumnLayout" width="100%">
+
+		<core:Title id="_IDGenTitle1" text="Phone Numbers"/>
+
+		<Label id="_IDGenLabel1" text="Home"/>
+		<Text id="_IDGenText1" text="+34 413 321 555"/>
+
+		<Label id="_IDGenLabel2" text="Office phone"/>
+		<Text id="_IDGenText2" text="+34 413 321 555"/>
+
+	</forms:SimpleForm>
+
+</mvc:View>

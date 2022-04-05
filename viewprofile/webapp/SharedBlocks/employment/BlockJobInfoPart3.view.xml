@@ -1,0 +1,24 @@
+<mvc:View
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:layout="sap.ui.layout"
+		xmlns="sap.m">
+
+
+	<layout:HorizontalLayout id="_IDGenHorizontalLayout1" class="sapUiSmallMarginTop">
+		<layout:VerticalLayout id="_IDGenVerticalLayout1">
+			<Label id="_IDGenLabel1" text="Manager"/>
+			<layout:HorizontalLayout id="_IDGenHorizontalLayout2">
+					<layout:content>
+						<layout:VerticalLayout id="_IDGenVerticalLayout2">
+							<Text id="_IDGenText1" text="Vicente Smith"/>
+							<Text id="_IDGenText2" text="Development Manager"/>
+
+						</layout:VerticalLayout>
+					</layout:content>
+			</layout:HorizontalLayout>
+
+		</layout:VerticalLayout>
+	</layout:HorizontalLayout>
+
+
+</mvc:View>

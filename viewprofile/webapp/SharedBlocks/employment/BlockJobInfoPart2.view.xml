@@ -1,0 +1,23 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" labelSpanL="4" labelSpanM="4" editable="false"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
+
+		<Label id="_IDGenLabel1" text="Employee Class"/>
+		<Text id="_IDGenText1" text="Employee"/>
+
+		<Text id="_IDGenText2" text=" "/>
+
+		<Label id="_IDGenLabel2" text="FTE"/>
+		<Text id="_IDGenText3" text="1"/>
+
+		<Text id="_IDGenText4" text=" "/>
+
+		<Label id="_IDGenLabel3" text="Standard Weekly Hours"/>
+		<Label id="_IDGenLabel4" text="40"/>
+	</forms:SimpleForm>
+
+
+</mvc:View>

@@ -1,0 +1,94 @@
+_schema-version: "3.2"
+ID: nttdata-com-dinamicselect
+description: A Fiori application.
+version: 0.0.1
+modules:
+- name: nttdata-com-dinamicselect-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: nttdata-com-dinamicselect-destination-service
+    parameters:
+      content-target: true
+  - name: nttdata-com-dinamicselect-repo-host
+    parameters:
+      service-key:
+        name: nttdata-com-dinamicselect-repo-host-key
+  - name: nttdata-com-dinamicselect-uaa
+    parameters:
+      service-key:
+        name: nttdata-com-dinamicselect-uaa-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: nttdata-com-dinamicselect_html_repo_host
+          ServiceInstanceName: nttdata-com-dinamicselect-html5-srv
+          ServiceKeyName: nttdata-com-dinamicselect-repo-host-key
+          sap.cloud.service: nttdata-com-dinamicselect
+        - Authentication: OAuth2UserTokenExchange
+          Name: nttdata-com-dinamicselect_uaa
+          ServiceInstanceName: nttdata-com-dinamicselect-xsuaa-srv
+          ServiceKeyName: nttdata-com-dinamicselect-uaa-key
+          sap.cloud.service: nttdata-com-dinamicselect
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: nttdata-com-dinamicselect-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: nttdata-com-dinamicselect-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - nttdatacomdinamicselect.zip
+      name: nttdatacomdinamicselect
+      target-path: resources/
+- name: nttdatacomdinamicselect
+  type: html5
+  path: .
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: nttdata-com-dinamicselect-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: nttdata-com-dinamicselect-destination-service
+    service-plan: lite
+- name: nttdata-com-dinamicselect-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: nttdata-com-dinamicselect-xsuaa-srv
+    service-plan: application
+- name: nttdata-com-dinamicselect-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: nttdata-com-dinamicselect-html5-srv
+    service-plan: app-host
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true

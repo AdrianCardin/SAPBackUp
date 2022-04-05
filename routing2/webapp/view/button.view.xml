@@ -1,0 +1,48 @@
+<mvc:View
+    controllerName="routing2.controller.button"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+               <Page id="ciudades" title="View1">
+                    <content>
+                    <tnt:NavigationList
+                            id="navigationList"
+                            width="320px"
+                            selectedKey="subItem3">
+                            <tnt:NavigationListItem id="_IDGenNavigationListItem1" text="Item 1" key="rootItem1" icon="sap-icon://employee">
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem2" text="Sub Item 1" />
+                            </tnt:NavigationListItem>
+
+                            <tnt:NavigationListItem id="_IDGenNavigationListItem7"
+                                text="Invisible Section"
+                                icon="sap-icon://employee"
+                                visible="">
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem8" text="Sub Item 1" />
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem9" text="Sub Item 2" />
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem10" text="Sub Item 3" />
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem11" text="Sub Item 4" />
+                            </tnt:NavigationListItem>
+                            
+                            <tnt:NavigationListItem id="_IDGenNavigationListItem12" text="Item 2" icon="sap-icon://call">
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem13" text="Sub Item 1" >
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem13.1" text="Sub Item 1.2" />
+                                </tnt:NavigationListItem>
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem14" text="Sub Item 2" />
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem15" text="Sub Item 3" />
+                                <tnt:NavigationListItem id="_IDGenNavigationListItem16" text="Sub Item 4" />
+                            </tnt:NavigationListItem>
+                        </tnt:NavigationList>
+                    	<Button id="botonPrueba" text="ve a la lista de ciudades"
+						press="onClick"/>
+                    </content>
+              </Page>
+            </pages>
+        </App>
+    </Shell>
+    
+</mvc:View>

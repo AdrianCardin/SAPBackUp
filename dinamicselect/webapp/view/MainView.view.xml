@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName="nttdata.com.dinamicselect.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <List 
+                            id         ="list"
+                            headerText ="Products"
+                            items      ="{ path: '/' }" > 
+                            <StandardListItem 
+                                id   ="sat"
+                                title="{ProductName}"/>
+                        </List>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

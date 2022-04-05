@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form"
+		  xmlns:core="sap.ui.core" xmlns="sap.m">
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" layout="ColumnLayout" editable="false" width="100%">
+
+		<core:Title id="_IDGenTitle1" text="Addresses"/>
+
+		<Label id="_IDGenLabel1" text="Home Address"/>
+		<Text id="_IDGenText1" text="2096 Bernabeu"/>
+
+		<Label id="_IDGenLabel2" text="Mailing Address"/>
+		<Text id="_IDGenText2" text="PO Box 32114"/>
+
+	</forms:SimpleForm>
+</mvc:View>

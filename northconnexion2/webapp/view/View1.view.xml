@@ -1,0 +1,58 @@
+<mvc:View
+    controllerName="nttdata.com.northconnexion2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.f" 
+    xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                <l:VerticalLayout id="_IDGenVerticalLayout1" class="sapUiContentPadding">
+                     <f:Card id="_IDGenCard1" class="sapUiMediumMargin" width="300px">
+                                <f:header>
+                                    <card:Header id="_IDGenHeader1"
+                                        title="Buy bus ticket on-line"
+                                        subtitle="Buy a single-ride ticket for a date"
+                                        iconSrc="sap-icon://bus-public-transport" />
+                                </f:header>
+                                <f:content>
+                                    <VBox id="_IDGenVBox2"
+                                        height="110px"
+                                        class="sapUiSmallMargin"
+                                        justifyContent="SpaceBetween">
+                                        <HBox id="_IDGenHBox1" justifyContent="SpaceBetween">
+                                            <ComboBox id="_IDGenComboBox1"
+                                                width="120px"
+                                                placeholder="From City"
+                                                items="{ path:'/' }">
+                                                <core:Item id="_IDGenItem1" key="{RegionID}" text="{RegionDescription}" />
+                                            </ComboBox>
+                                            <ComboBox id="_IDGenComboBox2"
+                                                width="120px"
+                                                placeholder="To City"
+                                                items="{ path:'/' }">
+                                                <core:Item id="_IDGenItem2" key="{RegionID}" text="{RegionDescription}" />
+                                            </ComboBox>
+                                        </HBox>
+                                        <HBox id="_IDGenHBox2" renderType="Bare" justifyContent="SpaceBetween">
+                                            <Button id="_IDGenButton1"
+                                                text="Diferencia"
+                                                press=".diferenciaHoraria"
+                                                type="Emphasized"
+                                                class="sapUiTinyMarginBegin" />
+                                        </HBox>
+                                    </VBox>
+                                </f:content>
+                        </f:Card>
+                        <Text id="_IDGenText1" text="{/1/RegionDescription}"/>
+                </l:VerticalLayout>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

@@ -1,0 +1,41 @@
+<mvc:View
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:layout="sap.ui.layout"
+		xmlns="sap.m">
+
+	<layout:Grid id="_IDGenGrid1" defaultSpan="L4 M6 S12" hSpacing="0" width="100%">
+		<layout:content>
+			<layout:VerticalLayout id="_IDGenVerticalLayout1">
+				<layout:HorizontalLayout id="_IDGenHorizontalLayout1">
+					<layout:Grid id="_IDGenGrid2" defaultSpan="L4 M4 S4" hSpacing="0" width="100%">
+						<layout:content>
+							<layout:VerticalLayout id="_IDGenVerticalLayout2">
+								<Label id="_IDGenLabel1" text="{emp1>name}"/>
+								<Label id="_IDGenLabel2" text="{emp1>job}"/>
+								<layout:layoutData>
+									<layout:GridData id="_IDGenGridData1" span="L12 M12 S12"/>
+								</layout:layoutData>
+							</layout:VerticalLayout>
+						</layout:content>
+					</layout:Grid>
+				</layout:HorizontalLayout>
+
+				<layout:layoutData>
+					<layout:GridData id="_IDGenGridData2" linebreak="true"/>
+				</layout:layoutData>
+
+				<layout:HorizontalLayout id="_IDGenHorizontalLayout2">
+					<layout:Grid id="_IDGenGrid3" defaultSpan="L4 M4 S4" hSpacing="0" width="100%">
+						<layout:VerticalLayout id="_IDGenVerticalLayout3">
+							<Label id="_IDGenLabel3" text="{emp2>name}"/>
+							<Label id="_IDGenLabel4" text="{emp2>job}"/>
+							<layout:layoutData>
+								<layout:GridData id="_IDGenGridData3" span="L12 M12 S12"/>
+							</layout:layoutData>
+						</layout:VerticalLayout>
+					</layout:Grid>
+				</layout:HorizontalLayout>
+			</layout:VerticalLayout>
+		</layout:content>
+	</layout:Grid>
+</mvc:View>

@@ -1,0 +1,26 @@
+<mvc:View
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:forms="sap.ui.layout.form"
+		xmlns="sap.m">
+
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" labelSpanL="4" labelSpanM="4"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" editable="false"
+					  layout="ResponsiveGridLayout"
+					  width="100%">
+		<Label id="_IDGenLabel1" text="Start Date"/>
+		<Text id="_IDGenText1" text="Jan 01, 2001"/>
+
+		<Label id="_IDGenLabel2" text="End Date"/>
+		<Text id="_IDGenText2" text="Jun 30, 2014"/>
+
+		<Label id="_IDGenLabel3" text="Last Date Worked"/>
+		<Text id="_IDGenText3" text="Jun 01, 2014"/>
+
+		<Label id="_IDGenLabel4" text="Payroll End Date"/>
+		<Text id="_IDGenText4" text="Jun 01, 2014"/>
+	</forms:SimpleForm>
+
+
+</mvc:View>

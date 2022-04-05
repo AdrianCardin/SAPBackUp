@@ -1,0 +1,26 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" labelSpanL="4" labelSpanM="4" editable="false"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
+
+		<Label id="_IDGenLabel1" text="Job classification"/>
+		<Text id="_IDGenText1" text="Senior Ui Developer (UIDEV-SR)"/>
+
+		<Text id="_IDGenText2" text=" "/>
+
+		<Label id="_IDGenLabel2" text="Pay Grade"/>
+		<Text id="_IDGenText3" text="Salary Grade 18 (GR-14)"/>
+
+		<Text id="_IDGenText4" text=" "/>
+
+		<Label id="_IDGenLabel3" text="Job title"/>
+		<Text id="_IDGenText5" text="Developer"/>
+
+		<Text id="_IDGenText6" text=" "/>
+
+		<Label id="_IDGenLabel4" text="Local Job Title"/>
+		<Label id="_IDGenLabel5" text="Ui Developer"/>
+	</forms:SimpleForm>
+
+</mvc:View>

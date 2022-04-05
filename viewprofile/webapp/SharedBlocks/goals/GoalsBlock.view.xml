@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+	<forms:SimpleForm id="_IDGenSimpleForm1" editable="false" layout="ColumnLayout">
+
+			<Label id="_IDGenLabel1" text="Evangelize the UI framework across the company" />
+			<Text id="_IDGenText1" text="4 days overdue Cascaded"/>
+
+			<Label id="_IDGenLabel2" text="Get trained in development management direction" />
+			<Text id="_IDGenText2" text="Due Nov 21"/>
+
+			<Label id="_IDGenLabel3" text="Mentor junior developers" />
+			<Text id="_IDGenText3" text="Due Dec 31 Cascaded"/>
+
+	</forms:SimpleForm>
+</mvc:View>

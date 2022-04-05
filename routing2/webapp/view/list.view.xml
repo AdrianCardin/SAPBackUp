@@ -1,0 +1,29 @@
+<mvc:View
+    controllerName="routing2.controller.list"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
+                    <content>
+                    <Button id="botonPrueba" text="Retroceder" press="onClick"/>
+                        <List 
+                            id         ="list"
+                            headerText ="Products"
+                            items      ="{ path: '/' }" > 
+                            <items>
+                                <StandardListItem 
+                                    id   ="sat"
+                                    title="{ProductName}"
+                                    counter="{UnitsInStock}" />
+                            </items>
+                        </List>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

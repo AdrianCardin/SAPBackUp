@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form"
+		  xmlns:core="sap.ui.core" xmlns="sap.m">
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" editable="false" labelSpanL="4" labelSpanM="4"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" width="100%">
+		<core:Title id="_IDGenTitle1" text="Social Accounts"/>
+
+		<Label id="_IDGenLabel1" text="LinkedIn"/>
+		<Text id="_IDGenText1" text="/AdrianCardin"/>
+
+		<Label id="_IDGenLabel2" text="Twitter"/>
+		<Text id="_IDGenText2" text="@acardin"/>
+
+        <Label id="_IDGenLabel3" text="Twitch"/>
+		<Text id="_IDGenText3" text="@acardin"/>
+        
+
+	</forms:SimpleForm>
+</mvc:View>

@@ -1,0 +1,89 @@
+<mvc:View
+    controllerName="nttdata.com.conexionnorth.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.f" 
+    xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                        <List 
+                            id         ="list"
+                            headerText ="Products"
+                            items      ="{ path: '/' }" > 
+                            <StandardListItem 
+                                id   ="sat"
+                                title="{ProductName}"/>
+                        </List>
+
+
+
+                    <!--<l:VerticalLayout id="_IDGenVerticalLayout1"
+                            class="sapUiContentPadding"
+                            width="100%">
+                            <l:content>
+                                <Link id="_IDGenLink1"
+                                    text="Boton 1"
+                                    press="onChange" />
+                                <Link id="_IDGenLink2"
+                                    text="Disabled link"
+                                    enabled="false" />
+                                <Link id="_IDGenLink3"
+                                    text="Open SAP Homepage"
+                                    target="_blank"
+                                    href="http://www.sap.com" />
+                            </l:content>
+                        </l:VerticalLayout>
+                        <l:HorizontalLayout id="_IDGenHorizontalLayout1">
+                        <VBox id="_IDGenVBox1">
+				        <Text id="_IDGenText1" text="Lorem ipsum agna aliquyam eraptuabore et dolore magna aliquyam erat" />
+			            </VBox>
+                        </l:HorizontalLayout>
+
+                        <f:Card id="_IDGenCard1" class="sapUiMediumMargin" width="300px">
+                                <f:header>
+                                    <card:Header id="_IDGenHeader1"
+                                        title="Buy bus ticket on-line"
+                                        subtitle="Buy a single-ride ticket for a date"
+                                        iconSrc="sap-icon://bus-public-transport" />
+                                </f:header>
+                                <f:content>
+                                    <VBox id="_IDGenVBox2"
+                                        height="110px"
+                                        class="sapUiSmallMargin"
+                                        justifyContent="SpaceBetween">
+                                        <HBox id="_IDGenHBox1" justifyContent="SpaceBetween">
+                                            <ComboBox id="_IDGenComboBox1"
+                                                width="120px"
+                                                placeholder="From City"
+                                                items="{ path:'/' }">
+                                                <core:Item id="_IDGenItem1" key="{RegionID}" text="{RegionDescription}" />
+                                            </ComboBox>
+                                            <ComboBox id="_IDGenComboBox2"
+                                                width="120px"
+                                                placeholder="To City"
+                                                items="{ path:'/' }">
+                                                <core:Item id="_IDGenItem2" key="{RegionID}" text="{RegionDescription}" />
+                                            </ComboBox>
+                                        </HBox>
+                                        <HBox id="_IDGenHBox2" renderType="Bare" justifyContent="SpaceBetween">
+                                            <Button id="_IDGenButton1"
+                                                text="Diferencia"
+                                                press=".diferenciaHoraria"
+                                                type="Emphasized"
+                                                class="sapUiTinyMarginBegin" />
+                                        </HBox>
+                                    </VBox>
+                                </f:content>
+                        </f:Card>
+                        -->
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

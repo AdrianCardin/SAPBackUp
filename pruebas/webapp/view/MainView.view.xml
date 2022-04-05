@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="tester.pruebas.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    xmlns:core="sap.ui.core"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:vk="sap.ui.vk"
+	xmlns:vbm="sap.ui.vbm" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">  
+                    <Button id="_IDGenButton1" type="Back" press="onPress" />
+                        <ComboBox id="_IDGenComboBox1" selectionChange="onPress"
+                             items="{ path: 'ModeloUbicaciones>/ubicaciones', sorter: { path: 'ubicacion' } }">
+                             <core:Item id="_IDGenItem1" key="{ModeloUbicaciones>ubicacionkey}" text="{ModeloUbicaciones>ubicacion}"/>  
+                        </ComboBox>
+                        	<Label id="label" text="Label A (required)" labelFor="input-a" />
+		                    <Input id="input-a" required="true" />
+                    <Panel id="calendario">
+                        <Label id="_IDGenLabel1" text="simple DatePicker" labelFor="DP1"/>
+                            <DatePicker
+                                id="DP1"
+                                placeholder="Enter Date"
+                                change="handleChange"
+                            class="sapUiSmallMarginBottom"/>   
+                     </Panel>   
+                   
+                   
+
+                 </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

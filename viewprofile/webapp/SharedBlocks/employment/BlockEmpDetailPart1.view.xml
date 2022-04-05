@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+		  xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+
+
+	<forms:SimpleForm id="_IDGenSimpleForm1" labelSpanL="4" labelSpanM="4" editable="false"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" layout="ResponsiveGridLayout"
+					  width="100%">
+
+		<core:Title id="_IDGenTitle1" text="Termination information"/>
+		<Label id="_IDGenLabel1" text="Ok to return"/>
+		<Text id="_IDGenText1" text="No"/>
+
+		<Label id="_IDGenLabel2" text="Regret Termination"/>
+		<Text id="_IDGenText2" text="Yes"/>
+	</forms:SimpleForm>
+
+</mvc:View>
